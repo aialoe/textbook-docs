@@ -1,6 +1,6 @@
 # Identity Management
 
-When a user first logs in we stored . Currently we only support logins via one's google account. Other methods will be added later, e.g., email-password, phone number or via other social providers.
+When a user first logs in he/she is required to input some identity data. Currently we only support logins via one's google account. Other methods will be added later, e.g., email-password, phone number or via other social providers.
 
 ## Sample data
 
