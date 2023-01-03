@@ -1,0 +1,63 @@
+site_name: Documentation for iTell
+site_author: Lear Lab
+theme:
+  name: material
+  features:
+    # - announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    # - content.tabs.link
+    - content.tooltips
+    # - header.autohide
+    # - navigation.expand
+    - navigation.footer
+    - navigation.indexes
+    # - navigation.instant
+    # - navigation.prune
+    - navigation.sections
+    - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+  # - toc.integrate
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+markdown_extensions:
+  - pymdownx.highlight:
+      use_pygments: true
+  - pymdownx.superfences
+
+nav:
+  - Home: index.md
+  - Data Collecton:
+      - User Identity: data/identity.md
+      - Summaries: data/summary.md
+      - Keystroke Logging: data/keystrokes.md
+      - Focus Time: data/focus.md
+      - Google Analytics: data/ga.md
+  - Development:
+      - Starting the website: development/dependency.md
+      - Add textbook content: development/content.md
+      - Connecting to Firebase: development/firebase.md
