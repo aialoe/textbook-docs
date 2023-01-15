@@ -1,12 +1,14 @@
 # Focus Time
 
-Focus time (the duration where something is visible in a user's viewport) is tracked on a per-element basis, this usually means that every text paragraph, figure and video elements get its own records. The css selector used is
+Focus time (the duration where something is visible in a user's viewport) is tracked on a per-section-element basis. When the user enters a section, the visible time of every text paragraph, figure and video elements get is recorded. The css selector used is
 
 ```
 content.querySelectorAll("h1, h2, p, img, video")
 ```
 
 Every element is then assigned an integer id starting from zero with the being order the same as their order on the page.
+
+The entire collection of all the visibility times of all elements in the section is sent to firebase at a 30s interval.
 
 If a user leaves the page, by switching to another tab or close the browser, the timer automatically pauses.
 
