@@ -6,6 +6,8 @@ Physically the summaries are stored as an array of the `users` collection.
 
 ```json
 {
+    "displayName": "jane doe",
+    "email":  "jane@gmail.com",
     // other user attributes
     ...,
     "summaries": [
